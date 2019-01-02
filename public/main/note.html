@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>간편메모장</title>
+  <link rel="stylesheet" href="../css/w3.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/note.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+  <script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+  <div class="header clear">
+    <ul id="bt_nav" class="hand">
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="logo">간편메모장</div>
+
+    <ul id="bt_add" class="hand">
+      <li></li>
+      <li></li>
+    </ul>
+    <div>
+      <button class="w3-button w3-indigo w3-small" id="bt_google_login">Login</button>
+      <button class="w3-button w3-red w3-small" id="bt_google_logout">logout</button>
+    </div>
+    <div class="email"></div>
+    <div class="symbol"><img></div>
+  </div>
+  <div class="section clear">
+    <div class="navs"></div>
+    <div class="conts">
+      <textarea name="content" id="content" class="form-control"></textarea>
+      <div class="w3-center w3-padding-16">
+        <button id="bt_save" class="btn btn-primary">등록</button>
+        <button id="bt_cancel" class="btn btn-default">취소</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    Copyright since 2018. Park seulgi.
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+  <script src="../js/note.js"></script>
+</body>
+
+</html>
